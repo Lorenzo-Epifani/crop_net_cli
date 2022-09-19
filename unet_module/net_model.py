@@ -121,3 +121,7 @@ def test_unet():
     print(x.shape)
     del model
     del x
+
+if __name__ == '__main__':
+    test_unet()
+    

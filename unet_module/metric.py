@@ -55,7 +55,7 @@ def iou(outputs, targets, batch_size, n_classes):
 ###############################################################################
 # testing
 ###############################################################################
-if __name__ == '__main__':
+def test_metric():
     x = torch.randint(high=2, size=(3, 1, 5, 5))
     y = torch.randint(high=2, size=(3, 1, 5, 5))
     print(x[0])
@@ -64,3 +64,7 @@ if __name__ == '__main__':
     print(sum(x[0].shape[1:]))
 
     print(pix_acc(x, y, 3))
+
+if __name__ == '__main__':
+    test_metric()
+    

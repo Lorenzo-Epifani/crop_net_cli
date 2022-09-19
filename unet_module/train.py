@@ -18,10 +18,10 @@ from torchvision import transforms, datasets
 import numpy as np
 
 from unet_module.net_model import UNet
-from data_ingestion import CellDataset
+from data_ingestion import unet_dl
 from metric import iou, pix_acc
 from loss import Weighted_Cross_Entropy_Loss
-from augmentation import (
+from data_ingestion.data_aug import (
     DoubleCompose, DoubleToTensor,
     DoubleHorizontalFlip, DoubleVerticalFlip, DoubleElasticTransform,
     GaussianNoise
