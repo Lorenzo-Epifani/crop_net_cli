@@ -1,5 +1,6 @@
 from os import getenv
 import sys
+import my_model_nn.my_model_nn as unet
 import config.core as core_conf
 cmd_to_f={}
 def set_config(*args, **kwargs):
@@ -49,7 +50,7 @@ def debug_function():
     '''
     print('debug')
     _C = local_conf
-    pass
+    unet.test_unet()
 
 
 
