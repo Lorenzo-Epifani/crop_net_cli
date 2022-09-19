@@ -7,7 +7,7 @@ import json
 from operator import itemgetter
 from pprint import pprint
 
-VALIDATE_ENABLED = True
+VALIDATE_ENABLED = False
 
 def _init()->Dict[str,Dict[str,str]]:
     def cerberus_format(entry,rule = {'type': 'string', 'required': True}):

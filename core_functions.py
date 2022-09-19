@@ -19,25 +19,27 @@ def set_config(*args, **kwargs):
     return inner
 
 
-@set_config('s2_dw')
-def s2_download():
+@set_config('tr')
+def train_model():
     '''
     Write your code here.
     This will be executed with 's2_dw' as command line argument.
     _C takes values from config/core.json in cmd--> s2_dw
     '''
     _C = local_conf
+    print(_C)
     pass
 
 
-@set_config('s2_ct')
-def s2_count():
+@set_config('inf')
+def inference():
     '''
     Write your code here.
     This will be executed with 's2_ct' as command line argument.
     _C takes values from config/core.json in cmd--> s2_ct
     '''
     _C = local_conf
+    print(_C)
     pass
 
 
